@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background"
+    tools:context=".Main">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="130dp"
+        android:gravity="center_horizontal"
+        android:text="Assert QR"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="50dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="605dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="30dp"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/createQR"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/roundbutton"
+            android:text="터치하시면\nQR코드가\n생성됩니다"
+            android:textColor="@color/light_blue_A200"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            />
+
+<!--        <androidx.appcompat.widget.AppCompatButton-->
+<!--            android:id="@+id/requestButton"-->
+<!--            android:layout_width="250dp"-->
+<!--            android:layout_height="35dp"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:layout_marginTop="80dp"-->
+<!--            android:background="@drawable/button"-->
+<!--            android:text="출입권한요청"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textSize="16sp"-->
+<!--            android:textStyle="bold" />-->
+
+    </LinearLayout>
+
+
+</FrameLayout>

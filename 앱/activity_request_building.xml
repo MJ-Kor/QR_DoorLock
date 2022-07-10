@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background"
+    tools:context=".RequestBuilding">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/back"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:background="@drawable/button"
+                android:textColor="@color/black"
+                android:layout_marginLeft="4dp"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:text="이전"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:id="@+id/requestBuilding"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="20dp"
+                android:layout_weight="2"
+                android:text="출입 권한 요청"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:background="@color/white"
+                android:textSize="30dp" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="80dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/nameText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="이름"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    />
+
+                <EditText
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/block"
+                    android:ems="10"
+                    android:hint=" 이름"
+                    android:paddingLeft="5dp"
+                    android:inputType="textPersonName"
+                    android:text="" />
+                <TextView
+                    android:id="@+id/studentNumText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="학번"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    />
+
+                <EditText
+                    android:id="@+id/studentNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/block"
+                    android:ems="10"
+                    android:hint=" 학번"
+                    android:paddingLeft="5dp"
+                    android:inputType="textPersonName"
+                    android:text="" />
+                <TextView
+                    android:id="@+id/departmentText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="학과"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/department"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/block"
+                    android:ems="10"
+                    android:hint=" 학과"
+                    android:paddingLeft="5dp"
+                    android:inputType="textPersonName"
+                    android:text="" />
+
+
+                <TextView
+                    android:id="@+id/buildingText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="신청건물"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/buildingBox"
+                    android:layout_width="230dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/block" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/requestButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="80dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/button"
+                    android:text="권한요청"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+</FrameLayout>
